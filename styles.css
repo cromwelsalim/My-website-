@@ -1,0 +1,425 @@
+head {
+    background-image: url('download.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navigation li {
+    margin: 10px 0;
+}
+
+.navigation li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation li a.logout {
+    color: #ff4d4d;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.earnings {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+}
+
+.earnings h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.earnings p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.earnings .percentage {
+    color: #4caf50;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.stat {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.stat p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.stat .tag {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.active-projects,
+.recent-invoices,
+.recommended-project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.active-projects h2,
+.recent-invoices h2,
+.recommended-project h2 {
+    margin: 0 0 20px 0;
+}
+
+.active-projects .date,
+.recommended-project .date {
+    color: #4caf50;
+    margin: 10px 0;
+}
+
+.active-projects a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.recent-invoices .invoice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.recent-invoices .invoice p {
+    margin: 0;
+}
+
+.recent-invoices .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.recent-invoices .status.paid {
+    background-color: #4caf50;
+}
+
+.recent-invoices .status.pending {
+    background-color: #ff4d4d;
+}
+
+.recent-invoices .rate {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.recommended-project .tag {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.recommended-project .tag.childcare {
+    background-color: #4caf50;
+}
+
+.recommended-project .status.none {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Styling for the home section */
+.home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.home p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.home .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+    background-color: #0056b3;
+}
+/* Styling for the projects section */
+.projects {
+    padding: 50px 20px;
+}
+
+.projects h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.project .btn {
+    display: block;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project .btn:hover {
+    background-color: #0056b3;
+}
+/* Styling for the about section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+/* Styling for the contact section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the signup page */
+.signup-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.signup-container h1 {
+    margin-bottom: 20px;
+}
+
+.signup-container form {
+    text-align: left;
+}
+
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup-container input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.signup-container p {
+    margin-top: 20px;
+}

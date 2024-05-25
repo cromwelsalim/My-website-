@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order for Assignment Help</title>
+    <link rel="stylesheet" href="dashstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Welcome back, Client</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Fill in the following and submit:</h2>
+            <div class="container">
+                <div class="content">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="taskDescription">Task Description:</label><br>
+                            <textarea id="taskDescription" name="taskDescription" rows="4" cols="50"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="fileUpload">Upload File (PDF, PNG, DOC):</label><br>
+                            <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.png,.doc,.docx">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget ($):</label><br>
+                            <input type="number" id="budget" name="budget" min="0">
+                        </div>
+                        <button type="submit">Submit</button>
+                        <button type="button" id="backButton" onclick="window.location.href='index.html';">Back</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Freelance Platform</p>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const formData = new FormData(this);
+            const message = `New Assignment Help Order:\nTask Description: ${formData.get('taskDescription')}\nBudget: $${formData.get('budget')}`;
+            const phoneNumber = '+254710372230';
+            const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+            window.location.href = whatsappLink;
+        });
+    </script>
+</body>
+</html>
